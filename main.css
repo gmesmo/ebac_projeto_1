@@ -4,8 +4,83 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Valorant;
+  src: url("./fonts/Valorant\ Font.ttf");
+}
+
 header {
   padding: 16px 0;
   background-color: #ff4655;
   color: white;
+}
+
+header,
+section h2 {
+  font-family: Valorant;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+header h1,
+section h2 {
+  font-weight: normal;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 16px;
+}
+
+header nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container,
+section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.class-list img {
+  height: 24px;
+  filter: invert(1);
+}
+
+.class-list li {
+  display: inline;
+  margin-right: 8px;
+}
+
+.container > img {
+  height: 480px;
+  margin-right: 32px;
+}
+
+section .container {
+  align-items: flex-start;
+}
+
+section {
+  padding: 24px 0;
+}
+
+section h2 {
+  margin-bottom: 16px;
+  color: #ff4655;
+}
+
+section p {
+  margin-bottom: 8px;
 }
