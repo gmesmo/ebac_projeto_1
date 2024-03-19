@@ -19,13 +19,13 @@
         <h1>Valorant</h1>
         <nav>
           <ul>
-            <li><a href="#">Sobre o Game</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#about">Sobre o Game</a></li>
+            <li><a href="#contacts">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section>
+    <section id="about">
       <div class="container">
         <img
           src="./images/valorant.webp"
@@ -77,10 +77,55 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="contacts">
       <div class="container">
         <h2>Contato</h2>
+        <div class="contact-methods">
+          <div>
+            <h3>Fale conosco</h3>
+            <form>
+              <input type="text" placeholder="Seu nome" required />
+              <input type="email" placeholder="Seu email" required />
+              <input type="tel" placeholder="Seu telefone (opcional)" />
+              <textarea placeholder="Sua mensagem" required></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+
+          <div>
+            <h3>Nos acompanhe</h3>
+            <ul class="social-links">
+              <li>
+                <a href="#" title="Siga-nos no Instagram">
+                  <img src="./images/instagram.png" alt="Logo do Instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Siga-nos no Facebook">
+                  <img src="./images/facebook.png" alt="Logo do Facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Visite nosso canal no YouTube">
+                  <img src="./images/youtube.png" alt="Logo do YouTube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Venha ate nos</h3>
+            <p>Rua React nº 123, Bairro Java - Porto Alegre - RS</p>
+          </div>
+        </div>
       </div>
     </section>
+    <footer>
+      <div class="container">
+        <p>
+          &copy; Valorant Fan Made EBAC - Projeto 1 - Todos os Direitos
+          Reservados
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
